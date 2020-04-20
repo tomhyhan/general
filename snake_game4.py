@@ -19,7 +19,7 @@ class snake_body:
         if len(self.snake_list) > self.snake_lng:
             self.snake_list.pop(0)
         for item in self.snake_list:
-            pygame.draw.rect(window,(255,0,0),[item[0],item[1],20,20])
+            pygame.draw.rect(window,(0,0,255),[item[0],item[1],20,20])
 
     def move(self):
         keys = pygame.key.get_pressed()
